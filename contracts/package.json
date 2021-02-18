@@ -1,0 +1,29 @@
+{
+  "name": "vlt",
+  "version": "0.1.0",
+  "description": "Valueless Token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valmy/bdc2.git"
+  },
+  "keywords": [
+    "ethereum",
+    "bsc",
+    "erc20",
+    "bep20",
+    "vlt"
+  ],
+  "author": "T. Budiman <tbudiman@hey.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valmy/bdc2/issues"
+  },
+  "homepage": "https://github.com/valmy/bdc2#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0"
+  }
+}

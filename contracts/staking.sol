@@ -2,12 +2,12 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 contract Staking {
-    
+
     uint public rate;
     address public owner;
     mapping(address => uint) public balances;
     mapping(address => uint) public counter;
-    
+
     // rate = increment percentage (0 - 100)
     constructor(uint _rate) {
         owner = msg.sender;
@@ -19,11 +19,13 @@ contract Staking {
         _;
     }
 
+    // add ether for reward as an owner
     function addFund() public payable onlyOwner {
         // contains unclaimed balances;
         balances[address(this)] += msg.value;
     }
-    
+
+    // deposit user funds
     function deposit() public payable {
         balances[msg.sender] += msg.value;
     }
@@ -43,9 +45,9 @@ contract Staking {
         require(balances[msg.sender] >= amount, "Not enough funds");
         payable(msg.sender).transfer(amount);
         balances[msg.sender] -= amount;
-    }    
+    }
 
-    // get user balance    
+    // get user balance
     function getBalance() public view returns(uint){
         return balances[msg.sender];
     }
@@ -55,11 +57,11 @@ contract Staking {
         return counter[msg.sender];
     }
 
-    // get reward balance
+    // get unclaimed reward balance
     function getRewardBalance() public view returns(uint) {
         return balances[address(this)];
     }
-    
+
     // send all ether to owner
     function sendFund() public onlyOwner {
         payable(owner).transfer(address(this).balance);

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.1+commit.df193b15"
+		"version": "0.8.0+commit.c7dfd78e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -202,11 +202,11 @@
 	},
 	"sources": {
 		"localhost/contracts/staking.sol": {
-			"keccak256": "0x9ae6e99b5925c533b657b91c49884756347e9386211a7a2e5cd154f875ae4a21",
+			"keccak256": "0x950e97040af724afc7d08ce619cc39c59f6a68fd8c9348a53404055daf017ed5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://365554274a3e37098eb2a46e0de6abcfe62b1befc31f66978d7dd624f434f7af",
-				"dweb:/ipfs/QmYP3o6zGituEbetFKtbUHpwDZ1EZMLzGowJ2nTG3wQBCz"
+				"bzz-raw://bca124454c967ddb061348ce7fb2c49fa744798ec33eee934900f6eb76906c72",
+				"dweb:/ipfs/QmV94M3494QiwaYLAMfPjwvAWRR28Y9W38mVWDNvRGoGiG"
 			]
 		}
 	},
