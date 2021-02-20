@@ -1,0 +1,526 @@
+{
+	"compiler": {
+		"version": "0.8.1+commit.df193b15"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum Property.PropertyTypes",
+								"name": "propertyType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint32",
+								"name": "area",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "propertyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gps",
+								"type": "string"
+							},
+							{
+								"internalType": "address[]",
+								"name": "interests",
+								"type": "address[]"
+							},
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "photoUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "enum Property.PropertyStatuses",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Property.RealEstate",
+						"name": "realEstate",
+						"type": "tuple"
+					}
+				],
+				"name": "buyProperty",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					}
+				],
+				"name": "getPropertyByLocationLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					}
+				],
+				"name": "getPropertyBySellerLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "propertiesByLocation",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Property.PropertyTypes",
+						"name": "propertyType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint32",
+						"name": "area",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "gps",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "photoUrl",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Property.PropertyStatuses",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "propertiesBySeller",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Property.PropertyTypes",
+						"name": "propertyType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint32",
+						"name": "area",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "gps",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "photoUrl",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Property.PropertyStatuses",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum Property.PropertyTypes",
+								"name": "propertyType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint32",
+								"name": "area",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "propertyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gps",
+								"type": "string"
+							},
+							{
+								"internalType": "address[]",
+								"name": "interests",
+								"type": "address[]"
+							},
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "photoUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "enum Property.PropertyStatuses",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Property.RealEstate",
+						"name": "realEstate",
+						"type": "tuple"
+					}
+				],
+				"name": "registerInterest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum Property.PropertyTypes",
+								"name": "propertyType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint32",
+								"name": "area",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "propertyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gps",
+								"type": "string"
+							},
+							{
+								"internalType": "address[]",
+								"name": "interests",
+								"type": "address[]"
+							},
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "photoUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "enum Property.PropertyStatuses",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Property.RealEstate",
+						"name": "realEstate",
+						"type": "tuple"
+					}
+				],
+				"name": "registerProperty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					}
+				],
+				"name": "searchProperty",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum Property.PropertyTypes",
+								"name": "propertyType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint32",
+								"name": "area",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "propertyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gps",
+								"type": "string"
+							},
+							{
+								"internalType": "address[]",
+								"name": "interests",
+								"type": "address[]"
+							},
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "photoUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "enum Property.PropertyStatuses",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Property.RealEstate[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/property.sol": "Property"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/property.sol": {
+			"keccak256": "0xfbd871ad37bdf6903fc07c4f4cc137cee55e3a73785885a0efdb584004ee9032",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ec0f18921c866f8b8d64df85dcbd48d4b06e4f6f4aa7e6c1ba8f103c74fe9543",
+				"dweb:/ipfs/QmYrKSiwZV35Zzqi99SJcQoxENWwAD24e6ox3WcBwQhEyr"
+			]
+		}
+	},
+	"version": 1
+}

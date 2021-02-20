@@ -375,11 +375,11 @@
 			]
 		},
 		"localhost/contracts/vlt.sol": {
-			"keccak256": "0x809dbc5d452fe732dcd95836fe68e431d0bd059684fee3aa4e725cc89005d9fa",
+			"keccak256": "0x30c8beac958ebb6fed01a5e7dedf590d9ffb60a453c446b69106a0473de0f7e2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a067a3a075de271ef96fc1b7df47fb2368511fe0cf8a19bac6ee67ec7373d4e1",
-				"dweb:/ipfs/QmP79DaCDMsADWkRz2ZF4apq1WMF5Y25oTEby1zWRsoEFG"
+				"bzz-raw://18f26b8b7b7d12afc4110609d8b7e5ae791f51f07f41cb0d18ed715ede9c648f",
+				"dweb:/ipfs/QmSvRhL3sNLB9nS3kQdDxfWPVYqM32mypeDQKHE8RAdrLB"
 			]
 		}
 	},

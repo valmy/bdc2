@@ -87,6 +87,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "minimumPurchase",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -100,9 +113,35 @@
 			},
 			{
 				"inputs": [],
+				"name": "pricePerToken",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "sendFund",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "vlt",
+				"outputs": [
+					{
+						"internalType": "contract ValuelessToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -166,19 +205,19 @@
 			]
 		},
 		"localhost/contracts/vlt.sol": {
-			"keccak256": "0xa7da00a9c4fec1174a0ff9e482d074331b66bd87d798b4016965dee0bc7d8709",
+			"keccak256": "0x30c8beac958ebb6fed01a5e7dedf590d9ffb60a453c446b69106a0473de0f7e2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36820dad1b22ebcfc05c501288693432bb608351dd2498ca7ade43ec9607785f",
-				"dweb:/ipfs/QmTZJrRsD4rwVYt7UUxYJFZiJhAo2Z41sJMkWspnEFbHa8"
+				"bzz-raw://18f26b8b7b7d12afc4110609d8b7e5ae791f51f07f41cb0d18ed715ede9c648f",
+				"dweb:/ipfs/QmSvRhL3sNLB9nS3kQdDxfWPVYqM32mypeDQKHE8RAdrLB"
 			]
 		},
 		"localhost/contracts/vltico.sol": {
-			"keccak256": "0x77d9cf6fc6c927ca806cccf61ce1832bd502227ec6ff648381a5bb1a1052859e",
+			"keccak256": "0x0b225a00cddb0688c68328f45b0e4307f0a8c8e9e9ec3d1b3f47b2a781699da5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://92de841f61864c0c807b72b9ec8ad66e1392e31454f15848f5a54dd134ec8025",
-				"dweb:/ipfs/QmeFWJMdav9ML3CihGFpUdTkeH1JHFVydEKa6snepMWTPf"
+				"bzz-raw://74705614218021edccb3dfb53ed11bc106008f4f0abb5752960db97cc75611f6",
+				"dweb:/ipfs/QmRrYLATfTCrVGwJ5tZtj59jaHYbfFdpF2ArBaBJ63U3st"
 			]
 		}
 	},

@@ -5,9 +5,9 @@ import "./vlt.sol";
 
 contract VLTICO {
     address public owner;
-    ValuelessToken vlt;
-    uint256 minimumPurchase;
-    uint256 pricePerToken;
+    ValuelessToken public vlt;
+    uint256 public minimumPurchase;
+    uint256 public pricePerToken;
     
     constructor(uint256 _minimumPurchase, uint256 _pricePerToken, address tokenAddr) {
         owner = msg.sender;
